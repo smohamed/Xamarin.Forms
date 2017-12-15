@@ -1388,7 +1388,7 @@ namespace Xamarin.Forms.Build.Tasks
 				return false;
 
 			var attributes = variableDefinition.VariableType.Resolve()
-				.CustomAttributes.Where(attribute => attribute.AttributeType.FullName == "Xamarin.Forms.RuntimeNamePropertyAttribute").ToList();
+				.CustomAttributes.Where(attribute => attribute.AttributeType.FullName == "Xamarin.Forms.Xaml.RuntimeNamePropertyAttribute").ToList();
 
 			if (!attributes.Any())
 				return false;
