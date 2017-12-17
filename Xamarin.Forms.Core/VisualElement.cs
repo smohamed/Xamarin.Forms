@@ -786,7 +786,9 @@ namespace Xamarin.Forms
 
 		static void OnIsEnabledPropertyChanged(BindableObject bindable, object oldValue, object newValue)
 		{
-			if (!(bindable is VisualElement element))
+			var element = (VisualElement)bindable;
+
+			if (element == null)
 			{
 				return;
 			}
@@ -800,7 +802,9 @@ namespace Xamarin.Forms
 
 		static void OnIsFocusedPropertyChanged(BindableObject bindable, object oldvalue, object newvalue)
 		{
-			if (!(bindable is VisualElement element))
+			var element = (VisualElement)bindable;
+
+			if (element == null)
 			{
 				return;
 			}
