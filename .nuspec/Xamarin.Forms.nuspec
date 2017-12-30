@@ -34,9 +34,9 @@
         <dependency id="Xamarin.Android.Support.v7.CardView" version="25.4.0.2"/>
         <dependency id="Xamarin.Android.Support.v7.MediaRouter" version="25.4.0.2"/>
       </group>
-      <group targetFramework="tizen40">
+      <!--<group targetFramework="tizen40">
         <dependency id="Tizen.NET" version="4.0.0"/>
-      </group>
+      </group>-->
     </dependencies>
   </metadata>
   <files>
